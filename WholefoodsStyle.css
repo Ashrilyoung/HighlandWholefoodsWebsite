@@ -1,0 +1,48 @@
+}
+#container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    
+    height: 100%;
+}
+
+#row1{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 10%;
+    
+    
+}
+
+#row2{
+    width: 99%;
+    display: block;
+    border-style: solid;
+    font-size: 40px;
+}
+
+
+#row3{
+    width: 50%;
+    display: inline-block;
+    border-style: solid;
+    font-size: 40px;
+}
+
+#row4{
+    display: inline-block;
+    font-size: 20px;
+}
+
+#row5{
+    display: inline-block;
+    width: 47%;
+    font-size: 20px;
+    border-style: solid;
+}
+    
