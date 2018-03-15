@@ -27,8 +27,13 @@
 				 	 
 									   
   $NumResults = mysqli_num_rows($Result);	                    //saves the number rows of data database query produces
+    
   
-  if ($NumResults==1)                                           
+  if ($NumResults==1)                                           //if the database query generated one result then set session variable logged in equal to true
+	  $_SESSION['loggedin'] = true;
+      $_SESSION['Email'] = $Email;  
+  
+    if ($NumResults==1)                                           
 	  
 	  
 	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.html');    //if the database query produced one result then go to the home page

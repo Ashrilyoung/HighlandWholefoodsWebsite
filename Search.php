@@ -2,7 +2,15 @@
 <head>
 </head>
 <body>
+     
+<table style = 'width: 70%' border= "10" bordercolor = black>
 
+<tr>
+<th>Product Name</th>                                           <!-- headings for a table -->
+<th>Product Code</th>
+<th>Product Stock</th>
+</tr>
+    
 
 <?php
 
@@ -16,40 +24,56 @@
 
 
   
-  $Query = "SELECT Product_Name, Product_code
-FROM Product
-WHERE Product_name LIKE '%$product%'";                                    //sql query to check whether the supplied user data corresponds with an account on the database
-  
+    $Query = "SELECT Product_Name, Product_code, Stock_Level
+    FROM Product
+    WHERE Product_name LIKE '%$product%'";                        
 
   
   $Result = mysqli_query($DB,$Query);	                        //generates a result for the database query
+    
+    
+
 				 	 
 									   
   $NumResults = mysqli_num_rows($Result);	                    //saves the number rows of data database query produces
   
-  if ($NumResults==1)                                           
+  if ($NumResults==0)                                           
 	  
-//	  
-//	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.html');    //if the database query produced one result then go to the home page
-while($row = mysqli_fetch_assoc($Result)){                 
+      header('Location: https://comp-hons.uhi.ac.uk/~16007873/DevelopingWebsitesstuff/CookieLoginError.html');    //if the database query produced one result then go to the home page
 
 
 
-echo "<tr>";
-echo "<td>" . $row["Product_Name"] . "</td>";                               //allows the data from the database to be displayed in the table
-echo "<td>" . $row["Product_Code"] . "</td>";
-echo "</tr>";
-
-
- }
+ 
 	
   else
 	  
-	header('Location: https://comp-hons.uhi.ac.uk/~16007873/DevelopingWebsitesstuff/CookieLoginError.html');   //if the database query did not produce one result then go to the log in error page
-	
+    while($row = mysqli_fetch_assoc($Result)){                 
+
+
+
+    echo "<tr>";
+    echo "<td>" . $row["Product_Name"] . "</td>";               //allows the data from the database to be displayed in the table
+    echo "<td>" . $row["Product_code"] . "</td>";
+    echo "<td>" . $row["Stock_Level"] . "</td>";
+    echo "</tr>";
+
+}
+            
+
 
 
 ?>
+</table>  
+    
+<form method="post" action="HighlandwholefoodsSearch.html">                             <!-- if this button is clicked the user will be moved to this page -->
+ <table>
+
+ <tr>
+ <td colspan="2"><input type="submit" value="Return"/></td>                  <!-- this button enters the information -->
+ </tr>
+	
+</table>
+</form>
 
 </body>
 </html>
