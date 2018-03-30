@@ -17,7 +17,7 @@
 
 
   
-  $Query = "SELECT Email_Address, Password FROM Account              
+  $Query = "SELECT Email_Address, Password, Job_Type FROM Account              
   WHERE Email_Address = '$Email'
   AND Password= '$Password'";                                    //sql query to check whether the supplied user data corresponds with an account on the database
   
@@ -31,12 +31,13 @@
   
   if ($NumResults==1)                                           //if the database query generated one result then set session variable logged in equal to true
 	  $_SESSION['loggedin'] = true;
-      $_SESSION['Email'] = $Email;  
+      $_SESSION['Email'] = $Email; 
+
   
     if ($NumResults==1)                                           
 	  
 	  
-	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.html');    //if the database query produced one result then go to the home page
+	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.php');    //if the database query produced one result then go to the home page
 	
   else
 	  

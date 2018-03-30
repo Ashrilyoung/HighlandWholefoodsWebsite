@@ -19,7 +19,7 @@
 
   
   $Query = "INSERT INTO Account
-  VALUES('$Email', '$Password', '$First', '$Last', 'c')";    //sql query to insert this user data into the database
+  VALUES('', '$Email', '$Password', '$First', '$Last', 'c')";    //sql query to insert this user data into the database
    
 
   
@@ -30,7 +30,7 @@
 
   if ($Result)
 	  
-	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsLogIn.html');                     //if the data goes into the table properly put them back to the log in screen
+	header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsLogIn.php');                     //if the data goes into the table properly put them back to the log in screen
 	
   else
 	  

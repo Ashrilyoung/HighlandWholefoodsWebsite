@@ -22,7 +22,7 @@ body {
 #row2{
     width: 99%;
     display: block;
-    border-style: solid;
+/*    border-style: solid;*/
     font-size: 40px;
 }
 
@@ -30,7 +30,7 @@ body {
 #row3{
     width: 50%;
     display: inline-block;
-    border-style: solid;
+/*    border-style: solid;*/
     font-size: 40px;
 }
 
@@ -43,6 +43,29 @@ body {
     display: inline-block;
     width: 47%;
     font-size: 20px;
-    border-style: solid;
+/*    border-style: solid;*/
 }
     
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}             /* data determining the look of the navigation bar */
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}

@@ -33,7 +33,7 @@
   
   if ($NumResults==0)                                           
 	  
-      header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsStockAdjust.html');    //if the database query produced one result then go to the home page
+      header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsStockAdjust.php');    //if the database query produced one result then go to the home page
 
 
 

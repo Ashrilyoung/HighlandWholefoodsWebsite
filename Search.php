@@ -1,9 +1,30 @@
 <html>
 <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highland Wholefoods Product Stock Adjustment Page</title>
+    <meta name="description" content="An interactive getting started guide for Brackets.">
+    <link rel="stylesheet" href="WholefoodsStyle.css">
 </head>
 <body>
-     
+
+            <ul>
+
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.php?">Product Search</a></li>
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsChooseOrder.php?">Create Order</a></li>
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsStockAdjust.php?">Adjust Stock</a></li>
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsSalesSearch.php?">View Sales</a></li>  
+    <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
+  
+        </ul>    
+    
+<br>
+<br>
+    
 <table style = 'width: 70%' border= "10" bordercolor = black>
+
 
 <tr>
 <th>Product Name</th>                                           <!-- headings for a table -->
@@ -64,8 +85,9 @@
 
 ?>
 </table>  
-    
-<form method="post" action="HighlandwholefoodsSearch.html">                             <!-- if this button is clicked the user will be moved to this page -->
+
+
+<form method="post" action="HighlandwholefoodsSearch.php">                             <!-- if this button is clicked the user will be moved to this page -->
  <table>
 
  <tr>
