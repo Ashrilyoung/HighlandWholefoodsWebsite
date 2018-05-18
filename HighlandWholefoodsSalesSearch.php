@@ -15,6 +15,8 @@
     
 <body>
     
+    <nav>
+    
         <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
@@ -25,11 +27,12 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
         </ul>
+    </nav>
     
 <?php
 session_start();                                                          //allows php session data to be used on this page
 
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {       // if the user is logged in display a message
+if (isset($_SESSION['employee']) && $_SESSION['employee'] == true) {       // if the user is logged in display a message
     echo "Hello, ".$_SESSION['Email']."!";
 } else {
    header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php');           //if user is not logged in as admin direct them to the home page
@@ -38,7 +41,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {       // if
 ?>
     
     
-<table style = 'width: 70%' border= "10" bordercolor = black>
+<table style = 'width: 100%' border= "10" bordercolor = black>
 
 <tr>                                          <!-- headings for a table -->
 <th>Product Sales</th>

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="WholefoodsStyle.css">
 </head>
 <body>
+    
+    <nav>
 
-            <ul>
+        <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandwholefoodsSearch.php?">Product Search</a></li>
@@ -18,12 +20,14 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsSalesSearch.php?">View Sales</a></li>  
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
-        </ul>    
+        </ul>   
+        
+    </nav>
     
 <br>
 <br>
     
-<table style = 'width: 70%' border= "10" bordercolor = black>
+<table style = 'width: 100%' border= "10" bordercolor = black>
 
 
 <tr>

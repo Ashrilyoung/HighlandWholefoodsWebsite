@@ -14,6 +14,8 @@
     
 <body>
 
+    <nav>
+        
         <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
@@ -24,13 +26,26 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
         </ul>    
+        
+    </nav>
+    
+<?php
+session_start();                                                          //allows php session data to be used on this page
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {       // if the user is logged in display a message
+    echo "Hello, ".$_SESSION['Email']."!";
+} else {
+   header('Location: https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php');           //if user is not logged in as admin direct them to the home page
+}
+
+?>
     
 <form method="post" action="Search.php">                             <!-- if this button is clicked the user will be moved to this page -->
  <table>
  
 <tr>
  <td>Search For Product:</td>
- <td><input type="text" name="product" size="50" required/></td>                       <!-- asks the user to enter a suitable email address -->
+ <td><input type="text" name="product" size="30" required/></td>                       <!-- asks the user to enter a suitable email address -->
 </tr>
      
  <tr>

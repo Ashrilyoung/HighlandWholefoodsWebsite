@@ -13,7 +13,7 @@
 </head>
     
 <body>
-
+    <nav>
         <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
@@ -23,7 +23,9 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsSalesSearch.php?">View Sales</a></li>  
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
-        </ul>    
+        </ul> 
+        
+    </nav>
     
 <div id = "row">
    
@@ -39,7 +41,7 @@
 <div id = "row2">
     <tr>
         <td>Email address :</td>
-        <td><input required type="email" name="Email" size="50"/></td>                         <!-- asks the user for their email address to be validated -->
+        <td><input required type="email" name="Email" size="25"/></td>                         <!-- asks the user for their email address to be validated -->
     </tr>
 </div>
 <div id = "row3">

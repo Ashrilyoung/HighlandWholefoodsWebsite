@@ -28,7 +28,12 @@
 									   
   $NumResults = mysqli_num_rows($Result);	                    //saves the number rows of data database query produces
     
-  
+    
+    
+  if ($Email == 'salesaccount@hiho.com')                                //checks for a certain email address 
+    $_SESSION['employee'] = true; 
+    
+    
   if ($NumResults==1)                                           //if the database query generated one result then set session variable logged in equal to true
 	  $_SESSION['loggedin'] = true;
       $_SESSION['Email'] = $Email; 

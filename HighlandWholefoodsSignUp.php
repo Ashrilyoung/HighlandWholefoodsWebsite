@@ -14,6 +14,8 @@
     
 <body>
 
+    <nav>
+        
         <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
@@ -23,14 +25,16 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsSalesSearch.php?">View Sales</a></li>  
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
-        </ul>    
+        </ul>  
+    
+    </nav>
     
 <form method="post" action="CreateAccount.php">                             <!-- if this button is clicked the user will be moved to this page -->
  <table>
  
 <tr>
  <td>Email:</td>
- <td><input type="email" name="Email_Address" size="50"/></td>                       <!-- asks the user to enter a suitable email address -->
+ <td><input type="email" name="Email_Address" size="25"/></td>                       <!-- asks the user to enter a suitable email address -->
 </tr>
   
  <tr>

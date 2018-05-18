@@ -13,7 +13,7 @@
 </head>
     
 <body>
- 
+    <nav>
         <ul>
 
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/HighlandWholefoodsHome.php?">Home</a></li>                       <!-- creates a navgation bar -->
@@ -24,12 +24,13 @@
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
         </ul>
+    </nav>
     
 <?php
 session_start();                                                          //allows php session data to be used on this page
     
 
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {       // if the user is logged in display a message
+if (isset($_SESSION['employee']) && $_SESSION['employee'] == true) {       // if the user is logged in display a message
     echo "Hello, ".$_SESSION['Email']."!";
     
 } else {

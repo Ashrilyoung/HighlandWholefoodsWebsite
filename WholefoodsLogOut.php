@@ -10,6 +10,8 @@ session_start();                                                    //allows ses
 <link rel="stylesheet" type="text/css" href="WholefoodsStyle.css" media="screen">                                          <!-- links to style sheet which decides how the website will look-->
 
 <body>
+    
+    <nav>
 
         <ul>
 
@@ -21,6 +23,8 @@ session_start();                                                    //allows ses
     <li><a href="https://comp-hons.uhi.ac.uk/~16007873/HighlandWholefoods/WholefoodsLogOut.php?">Log Out</a></li>
   
         </ul>
+        
+    </nav>
 
 
 <?php
